@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>创意画框</title>
+<style>
+/*将页面中所有元素的内外边距设置为0*/
+*{padding:0; margin:0;}
+.wai{ 
+	width:700px; 
+	height:347px;
+	/* 背景为线性渐变自左往右，颜色从蓝变红 */
+	background-image: linear-gradient(to right, #3d7ea5 30%, #ce4b4b 70%);
+	/* 边框样式为实线 */
+	border-style: solid;
+	/* 边框图像为images/1.jpg，偏移量为22% */
+	border-width:40px;
+	border-image-source: url("images/1.jpg");
+	border-image-slice: 22% 22% 22% 22%;
+	border-image-width: 40px;
+	border-image-repeat: repeat;
+	/* 盒子阴影 */
+	box-shadow: 3px 3px 8px 2px #999;
+
+
+	padding:38px 0;
+
+}
+.nei{
+	width: 100%;
+	height: 100%;
+	/* 背景为居中的背景图，不重复 */
+	background-image: url("images/zuqiu.png"); background-position: center center; 
+	background-repeat: no-repeat; 
+	/* 不透明度为0.4 */
+	opacity: 0.4;
+	
+	color: #ce4b4b;
+}
+</style>
+</head>
+<body>
+<div class="wai">
+  <div class="nei">
+  </div>
+</div>
+
+
+</body>
+</html>
